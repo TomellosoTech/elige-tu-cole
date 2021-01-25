@@ -1,0 +1,13 @@
+body{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.7;
+}
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+
+    /*Hack to fix shacking animation*/
+    backface-visibility: hidden;
+  }

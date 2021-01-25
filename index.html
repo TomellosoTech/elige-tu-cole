@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Colegios de Tomelloso | Toda la información en un solo sitio</title>
+    <title>Proceso de admisión, curso 2021 | Toda la información en un solo sitio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -41,12 +41,62 @@
     <meta name="twitter:description" content="Qué colegios hay en el pueblo, qué servicios ofrecen cada uno, cuáles son los datos de contacto y mucho más." />
     <meta name="twitter:image" content="http://elige-tu-cole.tomellosotech.org/images/social-share.jpg" />
 
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
-        body{ margin:0; padding: 0;}
-        html, body, iframe{ width:100%; height: 100%; border: 0}
+        /* body{ margin:0; padding: 0;}
+        html, body, iframe{ width:100%; height: 100%; border: 0} */
     </style>
 </head>
 <body>
-    <iframe src="https://www.arcgis.com/apps/opsdashboard/index.html#/ce29ee56623943a7b940a8ee75edfd18"></iframe>
+
+    <header class="header">
+        <div class="logo-box">
+          <img src="images/logo-ayuntamiento-tomelloso.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary-main">Proceso admisión</span>
+            <span class="heading-primary-sub">curso 2020/21, Tomelloso</span>
+          </h1>
+        </div>
+      </header>
+
+    <div class="container">
+        <h2>Sobre el proceso</h2>
+        <div class="row">
+            <div class="col-1-of-2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat dui eget orci laoreet, eu bibendum erat aliquam. Ut et eros sollicitudin, bibendum felis non, ultricies sem. Phasellus eget enim vel ante interdum tempus. Pellentesque semper porta faucibus. Maecenas mi dolor, fermentum maximus felis ut, interdum posuere metus. Etiam congue dolor at mauris eleifend pharetra. Mauris pellentesque finibus urna id viverra.
+                </p>
+                <p class="mt2">
+                    In hac habitasse platea dictumst. Aliquam a nibh tristique, venenatis magna a, tincidunt justo. Quisque ut dignissim mauris. Sed varius placerat enim, id blandit magna commodo non. Sed nec nisi in ex posuere tristique. Donec et faucibus metus. Etiam non pulvinar ligula.</p>
+                </p>
+            </div>
+            <div class="col-1-of-2">
+                <div style="--aspect-ratio: 16/9;">
+                    <iframe
+                      src="https://www.youtube.com/embed/56YBDIR8u-g"
+                      width="560"
+                      height="315"
+                      frameborder="0"
+                    >
+                    </iframe>
+                  </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-1-of-1 explorer-text-box">
+                <h2>Visita los coles</h2>
+                <p>
+                    Dada la situación tan excepcional de este curso ponemos a disposición de las familias
+                    este explorador que contiene información sobre los diferentes colegios del pueblo:
+                </p>
+                <iframe id="dashboard" src="https://www.arcgis.com/apps/opsdashboard/index.html#/b9cc37821a8340028f57fbb5c1ba1622"></iframe>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
