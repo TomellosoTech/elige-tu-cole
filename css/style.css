@@ -41,7 +41,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  padding: 30px; }
+  padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 1rem; } }
 
 .mt2 {
   margin-top: 2rem; }
@@ -56,6 +59,25 @@ body {
   text-transform: uppercase;
   /*Hack to fix shacking animation*/
   backface-visibility: hidden; }
+
+.heading-primary-main {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 11px; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary-main {
+      font-size: 2rem; } }
+
+.heading-primary-sub {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2.11rem;
+  animation: moveInRight 1s ease-out; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary-sub {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      letter-spacing: 1rem; } }
 
 [style*="--aspect-ratio"] > :first-child {
   width: 100%; }
@@ -88,6 +110,10 @@ body {
     position: absolute;
     top: 40px;
     left: 40px; }
+    @media only screen and (max-width: 37.5em) {
+      .header .logo-box {
+        left: 50%;
+        transform: translateX(-50%); } }
   .header .logo {
     height: 85px; }
   .header .text-box {
@@ -95,12 +121,12 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 37.5em) {
+      .header .text-box {
+        top: 45%; } }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 11px;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -111,9 +137,6 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 21.1px;
   animation: moveInRight 1s ease-out; }
 
 .row {
@@ -164,6 +187,9 @@ body {
   height: 80vh;
   border: 0;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    #dashboard {
+      display: none; } }
 
 .container {
   display: block;

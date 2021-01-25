@@ -10,7 +10,10 @@ html{
 }
 
 body{
-    padding: 30px;
+    padding: 3rem;
+    @include respond(phone) {
+        padding: 1rem;
+    }
 }
 
 .mt2{
